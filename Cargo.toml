@@ -1,0 +1,15 @@
+[package]
+name = "wit-flatten-test"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = { version = "1", default-features = false }
+bytes = { version = "1", default-features = false }
+wit-parser = "0.243"
+wit-encoder = "0.243"
+wasm-wave = "0.243"
+tokio = { version = "1", features = ["macros", "rt", "rt-multi-thread"] }
+tokio-util = { version = "0.7", features = ["codec", "compat"] }
+wasmtime = { version = "40", features = ["wave", "cranelift", "runtime", "component-model"] }
+wrpc-runtime-wasmtime = { version = "0.30", default-features = false }

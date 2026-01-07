@@ -1,0 +1,12 @@
+package starstream:utils@0.2.0;
+
+interface loopback {
+    use wasi:io/poll@0.2.0.{ pollable };
+
+    resource condition-variable {
+      as-pollable: func() -> pollable;
+      notify: func();
+    }
+
+    register-loopback: func() -> condition-variable;
+}

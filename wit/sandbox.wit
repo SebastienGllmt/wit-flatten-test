@@ -1,0 +1,12 @@
+package starstream:bg-plugin-base;
+
+world sandbox {
+    import wasi:webgpu/webgpu@0.0.1;
+    import wasi:graphics-context/graphics-context@0.0.1;
+    import wasi:surface/surface@0.0.1;
+    import wasi:clocks/monotonic-clock@0.2.0;
+    import wasi:io/poll@0.2.0;
+    import starstream:utils/loopback@0.2.0;
+
+    export queue-shader: func(shader-code: string);
+}
