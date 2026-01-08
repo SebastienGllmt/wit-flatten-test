@@ -691,21 +691,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0ce7134b9999ecaf8bcd65542e436736ef32ddca1b3e06094cb6ec5755203b80"
 
 [[package]]
-name = "flatten-test"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "bytes",
- "tokio",
- "tokio-util",
- "wasm-wave",
- "wasmtime 40.0.0",
- "wit-encoder",
- "wit-parser 0.243.0",
- "wrpc-runtime-wasmtime",
-]
-
-[[package]]
 name = "fnv"
 version = "1.0.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3089,6 +3074,21 @@ dependencies = [
  "semver",
  "serde",
  "wit-parser 0.243.0",
+]
+
+[[package]]
+name = "wit-flatten-test"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "bytes",
+ "tokio",
+ "tokio-util",
+ "wasm-wave",
+ "wasmtime 40.0.0",
+ "wit-encoder",
+ "wit-parser 0.243.0",
+ "wrpc-runtime-wasmtime",
 ]
 
 [[package]]
